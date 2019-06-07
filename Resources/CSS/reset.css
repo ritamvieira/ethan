@@ -1,0 +1,38 @@
+/*IMPORT GOOGLE FONTS*/
+@import url(http://fonts.googleapis.com/css?family=PT+Mono|Open+Sans:400italic,400,700);
+
+/*RESET BOX MODEL & FONT FAMILIES*/
+html{
+	box-sizing: border-box;
+	font-family: 'Open Sans', Arial, sans-serif; 
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+	font-family: inherit; 
+}
+img, input[type="image"]{ 
+	/*If you don't want browsers to resize your images.*/
+	box-sizing: content-box;
+}
+code, kbd, pre, samp {
+    font-family: 'PT Mono', 'Courier New', monospace;
+}
+
+/*TABLE-SPECIFIC*/
+/*Careful:
+	border-collapse:collapse;
+	may have undesirable effect on box-shadows in IE
+	http://stackoverflow.com/questions/5617455/box-shadow-on-ie9-doesnt-render-using-correct-css-works-on-firefox-chrome/5617540#5617540
+*/
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+th,td {
+    border:1px solid #000;
+    padding:10px;
+}
+th{
+	font-weight: bold;
+	text-align: center;
+}
